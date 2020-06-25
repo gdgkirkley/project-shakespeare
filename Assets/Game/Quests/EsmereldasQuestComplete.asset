@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 675d6fa5ea911e545836abad199b679c, type: 3}
+  m_Name: EsmereldasQuestComplete
+  m_EditorClassIdentifier: 
+  uniqueId: 
+  description: Esmerelda's Quest Complete
+  position: {x: 0, y: 0}
+  canViewEndNode: 0
+  _quests:
+  - {fileID: 11400000, guid: 242046a8378e2c849a3c379cb6dcdbf2, type: 2}
+  requiredQuestStatus: 2

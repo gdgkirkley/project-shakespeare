@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e8fda743b539a043b220ae6e99779c2, type: 3}
+  m_Name: Tree Prototype Group
+  m_EditorClassIdentifier: 
+  prototypes:
+  - prefab: {fileID: 8857733173634533020, guid: 7c616dfb3f5a7dd43be2793321854b18,
+      type: 3}
+    sharedMesh: {fileID: 4300006, guid: 3ac5e70902faa554e9577726f0c36c53, type: 3}
+    sharedMaterials:
+    - {fileID: 2100000, guid: b104d782b476e1942b6cebcb8bebc4b5, type: 2}
+    - {fileID: 2100000, guid: e4b65cca254a4b54596d306759334484, type: 2}
+    shadowCastingMode: 1
+    receiveShadow: 1
+    layer: 0
+    keepPrefabLayer: 0
+    billboard: {fileID: 0}
+    hasCollider: 0
+    colliderInfo:
+      center: {x: 0, y: 0, z: 0}
+      radius: 0
+      height: 0
+      direction: 0
+    pivotOffset: 0
+    baseRotation: {x: 0, y: 0, z: 0, w: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    editor_PrefabAssetPath: Assets/Asset Packs/HandpaintedEnvironmentVol1/Meshes/Prefab/Tree
+      Large/Tree_Large_01.prefab
+  - prefab: {fileID: 5650971130965433610, guid: 8e267ac346ac2bc47a40975b1d84f91c,
+      type: 3}
+    sharedMesh: {fileID: 4300000, guid: d42e4252b07133c43b4fc9e56743acaf, type: 3}
+    sharedMaterials:
+    - {fileID: 2100000, guid: b104d782b476e1942b6cebcb8bebc4b5, type: 2}
+    - {fileID: 2100000, guid: e4b65cca254a4b54596d306759334484, type: 2}
+    shadowCastingMode: 1
+    receiveShadow: 1
+    layer: 0
+    keepPrefabLayer: 0
+    billboard: {fileID: 0}
+    hasCollider: 0
+    colliderInfo:
+      center: {x: 0, y: 0, z: 0}
+      radius: 0
+      height: 0
+      direction: 0
+    pivotOffset: 0
+    baseRotation: {x: 0, y: 0, z: 0, w: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    editor_PrefabAssetPath: Assets/Asset Packs/HandpaintedEnvironmentVol1/Meshes/Prefab/Tree
+      Large/Tree_Large_02.prefab
+  - prefab: {fileID: 1152552672808247306, guid: f697d20f75c434c4397c5958b89959cc,
+      type: 3}
+    sharedMesh: {fileID: 4300006, guid: 1951f7cc803abcd43955f6b4fe42ee92, type: 3}
+    sharedMaterials:
+    - {fileID: 2100000, guid: b104d782b476e1942b6cebcb8bebc4b5, type: 2}
+    - {fileID: 2100000, guid: e4b65cca254a4b54596d306759334484, type: 2}
+    shadowCastingMode: 1
+    receiveShadow: 1
+    layer: 0
+    keepPrefabLayer: 0
+    billboard: {fileID: 0}
+    hasCollider: 0
+    colliderInfo:
+      center: {x: 0, y: 0, z: 0}
+      radius: 0
+      height: 0
+      direction: 0
+    pivotOffset: 0
+    baseRotation: {x: 0, y: 0, z: 0, w: 1}
+    baseScale: {x: 1, y: 1, z: 1}
+    editor_PrefabAssetPath: Assets/Asset Packs/HandpaintedEnvironmentVol1/Meshes/Prefab/Tree
+      Large/Tree_Large_03.prefab

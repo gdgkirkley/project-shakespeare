@@ -1,0 +1,313 @@
+fileFormatVersion: 2
+guid: 70d9dd1320913904aa353648dfde232b
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Bush 1
+    100002: Bush 2
+    100004: Bush 3
+    100006: Bush 4
+    100008: Bush 6
+    100010: Fir Tree 1
+    100012: Fir Tree 5
+    100014: Fir Tree 6
+    100016: Flat Rock 1
+    100018: Flat Rock 2
+    100020: Flat Rock 4
+    100022: Jungle Tree 10
+    100024: Jungle Tree 11
+    100026: Jungle Tree 3
+    100028: Jungle Tree 4
+    100030: Jungle Tree 5
+    100032: Jungle Tree 6
+    100034: Jungle Tree 8
+    100036: Jungle Tree 9
+    100038: Large Jungle Tree 2
+    100040: Large Jungle Tree 3
+    100042: Pebble 1
+    100044: Pebble 2
+    100046: Pebble 4
+    100048: Pebble 5
+    100050: Rock 1
+    100052: Rock 2
+    100054: Rock 3
+    100056: Rock 4
+    100058: Rock 6
+    100060: //RootNode
+    100062: Simple Rock 1
+    100064: Simple Rock 2
+    100066: Simple Rock 3
+    100068: Stump 1
+    100070: Stump 3
+    100072: Stump 4
+    100074: Stump 5
+    400000: Bush 1
+    400002: Bush 2
+    400004: Bush 3
+    400006: Bush 4
+    400008: Bush 6
+    400010: Fir Tree 1
+    400012: Fir Tree 5
+    400014: Fir Tree 6
+    400016: Flat Rock 1
+    400018: Flat Rock 2
+    400020: Flat Rock 4
+    400022: Jungle Tree 10
+    400024: Jungle Tree 11
+    400026: Jungle Tree 3
+    400028: Jungle Tree 4
+    400030: Jungle Tree 5
+    400032: Jungle Tree 6
+    400034: Jungle Tree 8
+    400036: Jungle Tree 9
+    400038: Large Jungle Tree 2
+    400040: Large Jungle Tree 3
+    400042: Pebble 1
+    400044: Pebble 2
+    400046: Pebble 4
+    400048: Pebble 5
+    400050: Rock 1
+    400052: Rock 2
+    400054: Rock 3
+    400056: Rock 4
+    400058: Rock 6
+    400060: //RootNode
+    400062: Simple Rock 1
+    400064: Simple Rock 2
+    400066: Simple Rock 3
+    400068: Stump 1
+    400070: Stump 3
+    400072: Stump 4
+    400074: Stump 5
+    2300000: Bush 1
+    2300002: Bush 2
+    2300004: Bush 3
+    2300006: Bush 4
+    2300008: Bush 6
+    2300010: Fir Tree 1
+    2300012: Fir Tree 5
+    2300014: Fir Tree 6
+    2300016: Flat Rock 1
+    2300018: Flat Rock 2
+    2300020: Flat Rock 4
+    2300022: Jungle Tree 10
+    2300024: Jungle Tree 11
+    2300026: Jungle Tree 3
+    2300028: Jungle Tree 4
+    2300030: Jungle Tree 5
+    2300032: Jungle Tree 6
+    2300034: Jungle Tree 8
+    2300036: Jungle Tree 9
+    2300038: Large Jungle Tree 2
+    2300040: Large Jungle Tree 3
+    2300042: Pebble 1
+    2300044: Pebble 2
+    2300046: Pebble 4
+    2300048: Pebble 5
+    2300050: Rock 1
+    2300052: Rock 2
+    2300054: Rock 3
+    2300056: Rock 4
+    2300058: Rock 6
+    2300060: Simple Rock 1
+    2300062: Simple Rock 2
+    2300064: Simple Rock 3
+    2300066: Stump 1
+    2300068: Stump 3
+    2300070: Stump 4
+    2300072: Stump 5
+    3300000: Bush 1
+    3300002: Bush 2
+    3300004: Bush 3
+    3300006: Bush 4
+    3300008: Bush 6
+    3300010: Fir Tree 1
+    3300012: Fir Tree 5
+    3300014: Fir Tree 6
+    3300016: Flat Rock 1
+    3300018: Flat Rock 2
+    3300020: Flat Rock 4
+    3300022: Jungle Tree 10
+    3300024: Jungle Tree 11
+    3300026: Jungle Tree 3
+    3300028: Jungle Tree 4
+    3300030: Jungle Tree 5
+    3300032: Jungle Tree 6
+    3300034: Jungle Tree 8
+    3300036: Jungle Tree 9
+    3300038: Large Jungle Tree 2
+    3300040: Large Jungle Tree 3
+    3300042: Pebble 1
+    3300044: Pebble 2
+    3300046: Pebble 4
+    3300048: Pebble 5
+    3300050: Rock 1
+    3300052: Rock 2
+    3300054: Rock 3
+    3300056: Rock 4
+    3300058: Rock 6
+    3300060: Simple Rock 1
+    3300062: Simple Rock 2
+    3300064: Simple Rock 3
+    3300066: Stump 1
+    3300068: Stump 3
+    3300070: Stump 4
+    3300072: Stump 5
+    4300000: Rock 2
+    4300002: Rock 1
+    4300004: Rock 3
+    4300006: Rock 6
+    4300008: Rock 4
+    4300010: Simple Rock 1
+    4300012: Simple Rock 3
+    4300014: Simple Rock 2
+    4300016: Flat Rock 1
+    4300018: Flat Rock 2
+    4300020: Flat Rock 4
+    4300022: Pebble 1
+    4300024: Pebble 2
+    4300026: Pebble 5
+    4300028: Pebble 4
+    4300030: Stump 1
+    4300032: Stump 3
+    4300034: Stump 4
+    4300036: Stump 5
+    4300038: Fir Tree 1
+    4300040: Fir Tree 5
+    4300042: Fir Tree 6
+    4300044: Jungle Tree 3
+    4300046: Jungle Tree 6
+    4300048: Jungle Tree 5
+    4300050: Jungle Tree 4
+    4300052: Jungle Tree 8
+    4300054: Jungle Tree 10
+    4300056: Jungle Tree 11
+    4300058: Jungle Tree 9
+    4300060: Large Jungle Tree 2
+    4300062: Large Jungle Tree 3
+    4300064: Bush 1
+    4300066: Bush 2
+    4300068: Bush 3
+    4300070: Bush 4
+    4300072: Bush 6
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Leaves
+    second: {fileID: 2100000, guid: 1b246934e5ebf13429449fb98ef6319b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Leaves 1
+    second: {fileID: 2100000, guid: 7cbc7316b4f5706498ce2ad82cfd44eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 675040b839763064a8c1b919730d4c41, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trunk
+    second: {fileID: 2100000, guid: 1d5466269eff6a14596b18ca954d919f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trunk 1
+    second: {fileID: 2100000, guid: b71dd66be1fe5f44a9f2582d6f16b06e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood 1
+    second: {fileID: 2100000, guid: f29feec3fb113d04c8d984a3180852d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood 2
+    second: {fileID: 2100000, guid: d296561e7681f1344927697cfbae9580, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.15
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
