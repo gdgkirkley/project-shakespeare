@@ -23,16 +23,10 @@ namespace Shakespeare.UI.Quests
         // Update is called once per frame
         void Update()
         {
-            if (Input.GetButtonDown("Journal"))
+            if (journalUI.activeSelf)
             {
-                journalUI.SetActive(!journalUI.activeSelf);
                 UpdateUI();
             }
-        }
-
-        public void OpenClose()
-        {
-            journalUI.SetActive(!journalUI.activeSelf);
         }
 
         void UpdateUI()
