@@ -15,12 +15,19 @@ namespace Shakespeare.Inventories
             pickup = GetComponent<Pickup>();
         }
 
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.CompareTag("Player"))
+            {
+                pickup.PickupItem();
+            }
+        }
+
         public bool HandleRaycast(PlayerController callingController)
         {
             if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log("click");
-                pickup.PickupItem();
+                callingController.GetComponent<Mover>().StartMoveAction(transform.position, 1f);
             }
             return true;
         }

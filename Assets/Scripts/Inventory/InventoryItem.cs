@@ -74,6 +74,11 @@ namespace Shakespeare.Inventories
             return pickup;
         }
 
+        public virtual void OnAdd()
+        {
+
+        }
+
         void ISerializationCallbackReceiver.OnBeforeSerialize()
         {
             if (string.IsNullOrWhiteSpace(itemId))

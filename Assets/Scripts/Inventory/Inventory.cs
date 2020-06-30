@@ -41,6 +41,8 @@ namespace Shakespeare.Inventories
 
             slots[i] = item;
 
+            item.OnAdd();
+
             if (inventoryUpdated != null)
             {
                 inventoryUpdated();
@@ -85,6 +87,8 @@ namespace Shakespeare.Inventories
             }
 
             slots[slot] = item;
+
+            item.OnAdd();
 
             if (inventoryUpdated != null)
             {

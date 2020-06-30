@@ -17,6 +17,6 @@ MonoBehaviour:
   description: Esmerelda would like you to get her a log!
   rewardXP: 1
   rewardCoin: 1
-  autoComplete: 1
+  autoComplete: 0
   tasks:
   - {fileID: 11400000, guid: a5dd1b17afa101544a36d76eb935701a, type: 2}

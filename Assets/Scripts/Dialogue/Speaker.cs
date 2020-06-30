@@ -130,13 +130,37 @@ namespace Shakespeare.Dialogue
             {
                 ConversationNode testNode = convo.GetNodeByUUID(node);
 
-                if (testNode.condition == null || testNode.condition.CanUse(convo))
+                if (testNode.conditions == null || testNode.conditions.Length == 0)
                 {
+                    TriggerAction(testNode);
                     return testNode;
+                }
+                else
+                {
+                    bool canUse = false;
+                    foreach (BaseCondition condition in testNode.conditions)
+                    {
+                        canUse = condition.CanUse(convo);
+                    }
+
+                    if (canUse)
+                    {
+                        TriggerAction(testNode);
+                        return testNode;
+                    }
                 }
             }
 
             return null;
+        }
+
+        private void TriggerAction(ConversationNode node)
+        {
+
+            if (node.actionToTrigger != DialogueEvent.None)
+            {
+                source.TriggerEventForAction(node.actionToTrigger);
+            }
         }
 
         private bool GetIsInRange()

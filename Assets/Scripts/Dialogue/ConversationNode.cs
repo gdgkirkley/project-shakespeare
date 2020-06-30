@@ -13,7 +13,7 @@ namespace Shakespeare.Dialogue
         public string text;
         public List<string> children = new List<string>();
         public DialogueEvent actionToTrigger = DialogueEvent.None;
-        public BaseCondition condition;
+        public BaseCondition[] conditions;
     }
     /*
     Can we create multiple types of nodes?

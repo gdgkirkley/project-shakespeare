@@ -84,13 +84,17 @@ namespace Shakespeare.Editor.Dialogue
                     GetCentreBottom() + Vector2.up * 10,
                     child.GetCentreTop() + Vector2.down * 10, Color.white, null, 3
                 );
-                if (childModel.condition != null)
+                if (childModel.conditions != null && childModel.conditions.Length > 0)
                 {
-                    Handles.Label(
-                        GetConditionPosition(this, child),
-                        childModel.condition.description,
-                        conditionStyle
-                        );
+                    foreach (BaseCondition condition in childModel.conditions)
+                    {
+
+                        Handles.Label(
+                            GetConditionPosition(this, child),
+                            condition.description,
+                            conditionStyle
+                            );
+                    }
                 }
             }
         }
