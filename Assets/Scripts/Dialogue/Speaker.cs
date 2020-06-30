@@ -140,6 +140,7 @@ namespace Shakespeare.Dialogue
                     bool canUse = false;
                     foreach (BaseCondition condition in testNode.conditions)
                     {
+                        if (condition == null) continue;
                         canUse = condition.CanUse(convo);
                     }
 

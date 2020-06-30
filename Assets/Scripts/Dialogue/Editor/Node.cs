@@ -86,15 +86,22 @@ namespace Shakespeare.Editor.Dialogue
                 );
                 if (childModel.conditions != null && childModel.conditions.Length > 0)
                 {
+                    string description = "";
+                    int index = 0;
+
                     foreach (BaseCondition condition in childModel.conditions)
                     {
+                        if (condition == null) continue;
 
-                        Handles.Label(
-                            GetConditionPosition(this, child),
-                            condition.description,
-                            conditionStyle
-                            );
+                        description += index + ": " + condition.description + "\n";
+                        index++;
                     }
+
+                    Handles.Label(
+                        GetConditionPosition(this, child),
+                        description,
+                        conditionStyle
+                        );
                 }
             }
         }

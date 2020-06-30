@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _nodes:
   - UUID: 6569d793-c9b8-4b1a-915a-a3b0c191fc22
-    position: {x: 106, y: 376}
+    position: {x: -23, y: 389}
     isResponse: 1
     text: I'm well.
     children:
@@ -22,7 +22,7 @@ MonoBehaviour:
     actionToTrigger: 2
     conditions: []
   - UUID: f0c3e00e-300f-4444-98a5-b473aaf41392
-    position: {x: 247, y: 215}
+    position: {x: 235, y: 228}
     isResponse: 0
     text: How are you?
     children:
@@ -40,7 +40,7 @@ MonoBehaviour:
     actionToTrigger: 2
     conditions: []
   - UUID: 58940ef6-2769-47c8-878d-e93eab6465d7
-    position: {x: 77, y: 536}
+    position: {x: 4, y: 563}
     isResponse: 0
     text: That's so great. Could you get me a log?
     children:
@@ -49,7 +49,7 @@ MonoBehaviour:
     actionToTrigger: 2
     conditions: []
   - UUID: 8c25d54c-a3ce-46b8-a071-f61ad0375610
-    position: {x: 609, y: 586}
+    position: {x: 594, y: 616}
     isResponse: 0
     text: What an amazing thing to say.
     children:
@@ -57,7 +57,7 @@ MonoBehaviour:
     actionToTrigger: 2
     conditions: []
   - UUID: 13fd415c-7aa0-44fc-a412-66e13ec5a2f6
-    position: {x: 647, y: 755}
+    position: {x: 696, y: 816}
     isResponse: 1
     text: Goodbye
     children: []
@@ -145,7 +145,7 @@ MonoBehaviour:
     actionToTrigger: 2
     conditions: []
   - UUID: d572d561-b0da-4a50-800e-04e27dd8c595
-    position: {x: 1008, y: 38}
+    position: {x: 1105, y: 21}
     isResponse: 0
     text: Thank you so much, Hero! You really are the best person around.
     children: []
