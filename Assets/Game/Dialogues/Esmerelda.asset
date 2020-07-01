@@ -22,7 +22,7 @@ MonoBehaviour:
     actionToTrigger: 2
     conditions: []
   - UUID: f0c3e00e-300f-4444-98a5-b473aaf41392
-    position: {x: 235, y: 228}
+    position: {x: -27, y: 198}
     isResponse: 0
     text: How are you?
     children:
@@ -32,7 +32,7 @@ MonoBehaviour:
     conditions:
     - {fileID: 11400000, guid: 6abde2dc9f25cee40ac6a41736472df9, type: 2}
   - UUID: 5bd207af-e695-425d-91a7-80cd071bf725
-    position: {x: 515, y: 408}
+    position: {x: 295, y: 391}
     isResponse: 1
     text: I live for danger.
     children:
@@ -49,7 +49,7 @@ MonoBehaviour:
     actionToTrigger: 2
     conditions: []
   - UUID: 8c25d54c-a3ce-46b8-a071-f61ad0375610
-    position: {x: 594, y: 616}
+    position: {x: 416, y: 558}
     isResponse: 0
     text: What an amazing thing to say.
     children:
@@ -57,7 +57,7 @@ MonoBehaviour:
     actionToTrigger: 2
     conditions: []
   - UUID: 13fd415c-7aa0-44fc-a412-66e13ec5a2f6
-    position: {x: 696, y: 816}
+    position: {x: 612, y: 739}
     isResponse: 1
     text: Goodbye
     children: []
@@ -117,10 +117,11 @@ MonoBehaviour:
     - f0c3e00e-300f-4444-98a5-b473aaf41392
     - e55ec377-e5b6-4ffc-8623-c2712771db6a
     - d572d561-b0da-4a50-800e-04e27dd8c595
+    - a9bb2ea4-e594-432c-ba05-5b6f2f47fd6c
     actionToTrigger: 2
     conditions: []
   - UUID: e55ec377-e5b6-4ffc-8623-c2712771db6a
-    position: {x: 851, y: 215}
+    position: {x: 634, y: 384}
     isResponse: 0
     text: Did you get me that log yet?
     children:
@@ -131,21 +132,21 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 3829ab461bf65d0468aa6f1b6d5f4022, type: 2}
     - {fileID: 11400000, guid: c70c111da91fad844a5f6b06469ca725, type: 2}
   - UUID: 92ce1931-7eb1-4912-a5ba-2c7596eb2dbb
-    position: {x: 887.12085, y: 409}
+    position: {x: 735.12085, y: 551}
     isResponse: 1
     text: I don't want to any more!
     children: []
     actionToTrigger: 2
     conditions: []
   - UUID: 43ec8e35-ce10-4d34-a1bd-fd42a9bff8f4
-    position: {x: 1229.5824, y: 403}
+    position: {x: 1064.5824, y: 550}
     isResponse: 1
     text: Working on it!!
     children: []
     actionToTrigger: 2
     conditions: []
   - UUID: d572d561-b0da-4a50-800e-04e27dd8c595
-    position: {x: 1105, y: 21}
+    position: {x: 1095, y: 249}
     isResponse: 0
     text: Thank you so much, Hero! You really are the best person around.
     children: []
@@ -153,3 +154,11 @@ MonoBehaviour:
     conditions:
     - {fileID: 11400000, guid: 3829ab461bf65d0468aa6f1b6d5f4022, type: 2}
     - {fileID: 11400000, guid: 04a26049c183e9348b6de91b5c55d8bb, type: 2}
+  - UUID: a9bb2ea4-e594-432c-ba05-5b6f2f47fd6c
+    position: {x: 1067.3496, y: 19}
+    isResponse: 0
+    text: I'm still so happy about that log. Every time I think about it, I'm thrilled.
+    children: []
+    actionToTrigger: 2
+    conditions:
+    - {fileID: 11400000, guid: bd7a99f48ec61dc47a72e5b23ee8841f, type: 2}

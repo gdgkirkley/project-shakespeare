@@ -46,6 +46,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc6347e544739494c88d083e6e85fd6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupXRotation: 140
+  pickupYRotation: 76
+  pickupZRotation: 90
 --- !u!114 &3494411438001836557
 MonoBehaviour:
   m_ObjectHideFlags: 0

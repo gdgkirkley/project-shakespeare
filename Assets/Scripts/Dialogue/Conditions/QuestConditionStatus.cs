@@ -14,7 +14,8 @@ namespace Shakespeare.Dialogue
         {
             return quests.All(quest =>
             {
-                return quest != null && quest.status == requiredQuestStatus;
+                return quest != null &&
+                    Journal.instance.GetQuestStatus(quest) == requiredQuestStatus;
             });
         }
     }

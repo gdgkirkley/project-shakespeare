@@ -4,6 +4,7 @@
     {
         NotStarted,
         InProgress,
-        Complete
+        Complete,
+        None
     }
 }

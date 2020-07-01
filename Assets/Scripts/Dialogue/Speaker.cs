@@ -137,9 +137,11 @@ namespace Shakespeare.Dialogue
                 }
                 else
                 {
-                    bool canUse = false;
+                    bool canUse = true;
                     foreach (BaseCondition condition in testNode.conditions)
                     {
+                        // All conditions must be true, so if any return false, we skip all the rest
+                        if (canUse == false) continue;
                         if (condition == null) continue;
                         canUse = condition.CanUse(convo);
                     }

@@ -70,7 +70,10 @@ namespace Shakespeare.Quests
         public bool Complete()
         {
             status = TaskStatus.Completed;
-            OnStatusChange(this);
+            if (OnStatusChange != null)
+            {
+                OnStatusChange(this);
+            }
             return isCompleted;
         }
 

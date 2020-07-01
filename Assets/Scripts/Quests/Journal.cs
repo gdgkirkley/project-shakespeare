@@ -51,6 +51,25 @@ namespace Shakespeare.Quests
             return completedQuests.Contains(quest);
         }
 
+        public QuestStatus GetQuestStatus(Quest quest)
+        {
+            Quest activeQuest = activeQuests.Find(q => q.name == quest.name);
+
+            if (activeQuest != null)
+            {
+                return activeQuest.status;
+            }
+
+            Quest completeQuest = completedQuests.Find(q => q.name == quest.name);
+
+            if (completeQuest != null)
+            {
+                return completeQuest.status;
+            }
+
+            return QuestStatus.None;
+        }
+
         public Quest GetQuestById(string questId)
         {
             return questList.GetQuestById(questId);

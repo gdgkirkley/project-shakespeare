@@ -19,7 +19,7 @@ namespace Shakespeare.Inventories
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                pickup.PickupItem();
+                other.GetComponent<Inventory>().TriggerPickup(pickup);
             }
         }
 

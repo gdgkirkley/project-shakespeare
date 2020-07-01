@@ -8,12 +8,12 @@ namespace Shakespeare.Inventories
     [CreateAssetMenu(menuName = "Shakespeare/Inventory/Quest Item")]
     public class QuestItem : InventoryItem
     {
+        [SerializeField] Quest quest;
         [SerializeField] Task task;
         [SerializeField] float progressToAdd;
 
         public override void OnAdd()
         {
-            Debug.Log("Calling");
             task.AddProgress(progressToAdd);
         }
     }

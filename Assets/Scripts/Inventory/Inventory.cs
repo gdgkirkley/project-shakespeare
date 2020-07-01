@@ -14,6 +14,8 @@ namespace Shakespeare.Inventories
 
         public event Action inventoryUpdated;
 
+        private Pickup itemToPickup;
+
         public static Inventory GetPlayerInventory()
         {
             var player = GameObject.FindWithTag("Player");
@@ -28,6 +30,28 @@ namespace Shakespeare.Inventories
         public int GetSize()
         {
             return slots.Length;
+        }
+
+        public void TriggerPickup(Pickup item)
+        {
+            GetComponent<Animator>().SetTrigger("lifting");
+            itemToPickup = item;
+        }
+
+        public void AddPickupItem()
+        {
+            itemToPickup.PickupItem();
+        }
+
+        public void PickupDestroy()
+        {
+            itemToPickup.Destroy();
+            itemToPickup = null;
+        }
+
+        public void ResetPickupAnimation()
+        {
+            GetComponent<Animator>().ResetTrigger("lifting");
         }
 
         public bool AddToFirstEmptySlot(InventoryItem item)
