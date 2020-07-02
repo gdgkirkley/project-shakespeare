@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Shakespeare.Dialogue;
 using UnityEngine;
 
 namespace Shakespeare.Control
@@ -15,6 +16,7 @@ namespace Shakespeare.Control
 
         GameObject player;
         Mover mover;
+        ConversationSource source;
         Vector3 position;
         int currentWayPointIndex = 0;
 
@@ -24,6 +26,7 @@ namespace Shakespeare.Control
         {
             player = GameObject.FindGameObjectWithTag("Player");
             mover = GetComponent<Mover>();
+            source = GetComponent<ConversationSource>();
             position = GetPosition();
         }
 
@@ -34,7 +37,15 @@ namespace Shakespeare.Control
 
         private void Update()
         {
-            NPCBehaviour();
+            if (source.isSpeaking)
+            {
+                ConversationBehaviour();
+            }
+            else
+            {
+                NPCBehaviour();
+            }
+
             UpdateTimers();
         }
 
@@ -79,6 +90,11 @@ namespace Shakespeare.Control
         {
             float distanceToWaypoint = Vector3.Distance(transform.position, GetCurrentWayPoint());
             return distanceToWaypoint < waypointTolerance;
+        }
+
+        private void ConversationBehaviour()
+        {
+            GetComponent<ActionScheduler>().CancelCurrentAction();
         }
     }
 

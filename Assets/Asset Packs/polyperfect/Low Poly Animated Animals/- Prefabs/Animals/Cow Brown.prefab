@@ -515,6 +515,7 @@ GameObject:
   - component: {fileID: 114009100225796694}
   - component: {fileID: 195059093664485922}
   - component: {fileID: 8800774858585122764}
+  - component: {fileID: 6057836553843630550}
   m_Layer: 0
   m_Name: Cow Brown
   m_TagString: Untagged
@@ -778,12 +779,24 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1244760467543844}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.53
+  m_Radius: 0.33
   m_Height: 3.37
   m_Direction: 2
-  m_Center: {x: 0.13, y: 1.13, z: 0.01}
+  m_Center: {x: 0.04, y: 1.2, z: 0.01}
+--- !u!114 &6057836553843630550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244760467543844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81bc1111fe34ead408445c883f81254b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1247043747989182
 GameObject:
   m_ObjectHideFlags: 0

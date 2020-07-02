@@ -8,6 +8,7 @@ namespace Shakespeare.Dialogue
     public class Speaker : MonoBehaviour, IAction, IConversable
     {
         [SerializeField] ConversationSource source;
+        [SerializeField] CameraDirector director;
         public ConversationNode currentNode { get; private set; }
 
         public event Action OnCurrentNodeChanged;
@@ -44,7 +45,8 @@ namespace Shakespeare.Dialogue
                 isTalking = true;
                 Conversation conversation = this.source.GetConversation();
                 currentNode = conversation.GetRootNode();
-                GetComponent<CameraController>().SetConversationMode();
+                director.DialogueInit(transform, source.transform);
+                director.OnSourceDialogue();
             }
             else
             {
@@ -80,13 +82,12 @@ namespace Shakespeare.Dialogue
             }
             if (childNode.children.Count == 0)
             {
-                currentNode = null;
-                source = null;
-                isTalking = false;
+                CancelConversation();
             }
             else
             {
                 currentNode = source.GetConversation().GetNodeByUUID(childNode.children[0]);
+                // director.OnPlayerDialogue();
             }
 
             OnCurrentNodeChanged();
@@ -104,6 +105,7 @@ namespace Shakespeare.Dialogue
 
                 if (newNode != null)
                 {
+                    // director.OnSourceDialogue();
                     currentNode = newNode;
                 }
                 else
@@ -117,9 +119,14 @@ namespace Shakespeare.Dialogue
 
         private void CancelConversation()
         {
+            if (source != null)
+            {
+                source.isSpeaking = false;
+            }
             currentNode = null;
             source = null;
             isTalking = false;
+            director.EndDialogue();
         }
 
         private ConversationNode GetUsableChild()

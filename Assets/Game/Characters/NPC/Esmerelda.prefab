@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 7005638997283452465}
   - component: {fileID: 8249077945640356817}
   - component: {fileID: 6800324713716824163}
+  - component: {fileID: 2003232709}
+  - component: {fileID: 2003232710}
+  - component: {fileID: 2003232711}
   m_Layer: 0
   m_Name: Esmerelda
   m_TagString: Untagged
@@ -119,12 +122,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18f430bfee8076e40a1300dd234b2166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterName: 
   conversation: {fileID: 11400000, guid: 73d0fd0a24205ea48adac67443171b50, type: 2}
-  questId: 
+  quest: {fileID: 11400000, guid: 242046a8378e2c849a3c379cb6dcdbf2, type: 2}
   canvas: {fileID: 0}
   speechBubblePrefab: {fileID: 7139909117992928943, guid: 8a12940dae6aa9a4e8e53cbf96329d4b,
     type: 3}
-  mainCam: {fileID: 0}
+  speaking: 0
+--- !u!114 &2003232709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3989523970072966908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 528893edea0083b42953a037a5353528, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path: {fileID: 0}
+  waypointTolerance: 1
+  dwellTime: 3
+  speed: 0.2
+--- !u!114 &2003232710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3989523970072966908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2102cbb6d916a9d4e88dc948550ea439, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  maxSpeed: 6
+  stoppingDistance: 0.2
+--- !u!114 &2003232711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3989523970072966908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6293870ba3ef299479b6f0798efb7c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5820497170549664941
 PrefabInstance:
   m_ObjectHideFlags: 0
