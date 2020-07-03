@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Sandbox.unity
+    guid: 2e298298598d7ad458395247d66386fb
+  - enabled: 1
+    path: Assets/Scenes/HeroHome.unity
+    guid: 4923f2abc03458843a6b43ad11408e49
   m_configObjects: {}

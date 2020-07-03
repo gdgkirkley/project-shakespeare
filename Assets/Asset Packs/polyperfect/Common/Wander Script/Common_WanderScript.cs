@@ -462,7 +462,7 @@ namespace PolyPerfect
             }
         }
 
-        private void BeginIdleState(bool firstState = false)
+        public void BeginIdleState(bool firstState = false)
         {
             if (!firstState)
             {
@@ -497,7 +497,7 @@ namespace PolyPerfect
             StartCoroutine(IdleState(stateTime));
         }
 
-        private IEnumerator IdleState(float stateTime)
+        public IEnumerator IdleState(float stateTime)
         {
             moving = false;
 
@@ -547,7 +547,7 @@ namespace PolyPerfect
             }
         }
 
-        private IEnumerator MovementState(Vector3 target)
+        public IEnumerator MovementState(Vector3 target)
         {
             moving = true;
 

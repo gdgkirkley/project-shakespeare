@@ -15,9 +15,9 @@ namespace Shakespeare.Interactions
             animator = GetComponent<Animator>();
         }
 
-        public void PetTallAnimal(Creature animal)
+        public void PetTallAnimal(Creature animal, Transform lookAt)
         {
-            transform.LookAt(animal.transform);
+            transform.LookAt(lookAt);
             currentTrigger = "pettingTall";
             animator.SetTrigger(currentTrigger);
             StartAction();
@@ -28,9 +28,9 @@ namespace Shakespeare.Interactions
             animator.ResetTrigger("pettingTall");
         }
 
-        public void PetSmallAnimal(Creature animal)
+        public void PetSmallAnimal(Creature animal, Transform lookAt)
         {
-            transform.LookAt(animal.transform);
+            transform.LookAt(lookAt);
             currentTrigger = "pettingSmall";
             animator.SetTrigger(currentTrigger);
             StartAction();

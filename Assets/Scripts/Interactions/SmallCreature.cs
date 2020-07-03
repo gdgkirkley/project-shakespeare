@@ -8,7 +8,9 @@ namespace Shakespeare.Interactions
     {
         public override void OnInteract(Actor actor)
         {
-            actor.PetSmallAnimal(this);
+            wanderScript.MovementState(walkTo.position);
+            actor.PetSmallAnimal(this, lookAtPoint);
+            interactionPoint.gameObject.SetActive(false);
         }
     }
 }

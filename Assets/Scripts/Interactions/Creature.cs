@@ -3,35 +3,35 @@ using System.Collections.Generic;
 using UnityEngine;
 using Shakespeare.Control;
 using PolyPerfect;
+using UnityEngine.AI;
 
 namespace Shakespeare.Interactions
 {
     public abstract class Creature : MonoBehaviour, IInteractable, IRaycastable
     {
-        Animator animator;
+        public Transform interactionPoint;
+        public Transform lookAtPoint;
+        public Common_WanderScript wanderScript;
+
+        protected Transform walkTo;
+        protected NavMeshAgent agent;
 
         private void Awake()
         {
-            animator = GetComponent<Animator>();
+            var player = GameObject.FindGameObjectWithTag("Player");
+            walkTo = player.GetComponent<Animator>().GetBoneTransform(HumanBodyBones.RightHand);
+            wanderScript = GetComponent<Common_WanderScript>();
+            agent = GetComponent<NavMeshAgent>();
         }
 
         public abstract void OnInteract(Actor actor);
-
-        private void OnTriggerEnter(Collider other)
-        {
-            if (other.gameObject.CompareTag("Player"))
-            {
-                Debug.Log("Collide");
-                Actor actor = other.GetComponent<Actor>();
-                OnInteract(actor);
-            }
-        }
 
         public bool HandleRaycast(PlayerController callingController)
         {
             if (Input.GetMouseButtonDown(0))
             {
-                callingController.GetComponent<Mover>().StartMoveAction(transform.position, 1f);
+                interactionPoint.gameObject.SetActive(true);
+                callingController.GetComponent<Mover>().StartMoveAction(interactionPoint.position, 1f);
             }
             return true;
         }
